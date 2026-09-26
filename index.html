@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>UCOM | United Citizens of Mineheart</title>
+
+    <style>
+        /* ===== BASIC SETTINGS ===== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #0b0612;
+            color: white;
+        }
+
+
+        /* ===== NAVBAR ===== */
+
+        nav {
+            height: 70px;
+            background: #140a20;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 60px;
+
+            border-bottom: 1px solid #6d28d9;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #a855f7;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #c084fc;
+        }
+
+
+        /* ===== HERO SECTION ===== */
+
+        .hero {
+            min-height: 600px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            text-align: center;
+
+            background:
+                linear-gradient(rgba(11, 6, 18, 0.7), rgba(11, 6, 18, 0.95)),
+                radial-gradient(circle at center, #6d28d9, #0b0612 60%);
+        }
+
+        .hero h1 {
+            font-size: 70px;
+            color: #c084fc;
+
+            text-shadow:
+                0 0 20px #7e22ce,
+                0 0 40px #581c87;
+        }
+
+        .hero p {
+            margin-top: 15px;
+            font-size: 20px;
+            color: #d8b4fe;
+        }
+
+
+        /* ===== BUTTONS ===== */
+
+        .buttons {
+            margin-top: 35px;
+            display: flex;
+            gap: 20px;
+        }
+
+        .btn {
+            padding: 14px 28px;
+
+            border-radius: 8px;
+
+            text-decoration: none;
+            font-weight: bold;
+
+            background: #7e22ce;
+            color: white;
+
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #a855f7;
+            transform: translateY(-3px);
+
+            box-shadow: 0 0 20px #9333ea;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            border: 1px solid #9333ea;
+        }
+
+
+        /* ===== ABOUT ===== */
+
+        .section {
+            padding: 80px 10%;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 40px;
+            color: #c084fc;
+            margin-bottom: 20px;
+        }
+
+        .section p {
+            max-width: 700px;
+            margin: auto;
+            color: #c4b5fd;
+            line-height: 1.7;
+        }
+
+
+        /* ===== CARDS ===== */
+
+        .cards {
+            margin-top: 50px;
+
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 250px;
+            padding: 30px;
+
+            background: #160b24;
+
+            border: 1px solid #4c1d95;
+            border-radius: 12px;
+
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            border-color: #a855f7;
+
+            box-shadow: 0 0 25px rgba(168, 85, 247, 0.4);
+        }
+
+        .card h3 {
+            color: #c084fc;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 14px;
+        }
+
+
+        /* ===== FOOTER ===== */
+
+        footer {
+            padding: 25px;
+            text-align: center;
+
+            background: #08040d;
+            color: #8b5cf6;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav>
+
+        <div class="logo">
+            UCOM
+        </div>
+
+        <div class="nav-links">
+
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#members">Members</a>
+            <a href="#contact">Contact</a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <h1>UCOM</h1>
+
+        <p>
+            United Citizens of Mineheart
+        </p>
+
+        <div class="buttons">
+
+            <a href="#about" class="btn">
+                Explore UCOM
+            </a>
+
+            <a href="#members" class="btn btn-secondary">
+                Our Members
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+
+    <section class="section" id="about">
+
+        <h2>About UCOM</h2>
+
+        <p>
+            UCOM is a Minecraft community built around teamwork,
+            development, PvP, building and creating our own legacy
+            within Mineheart.
+        </p>
+
+    </section>
+
+
+    <!-- MEMBERS -->
+
+    <section class="section" id="members">
+
+        <h2>Our Members</h2>
+
+<p>Meet the people behind UCOM.</p>
+
+<div class="cards">
+
+    <div class="card">
+        <h3>🔥 Pheonix</h3>
+        <p>UCOM Member</p>
+        <p>Helps with UCOM development and community activities.</p>
+    </div>
+
+    <div class="card">
+        <h3>👑 Mario</h3>
+        <p>Supreme Commander</p>
+        <p>Responsible for leadership, strategy and military affairs.</p>
+    </div>
+
+    <div class="card">
+        <h3>⚔️ noixq</h3>
+        <p>Supreme Commander</p>
+        <p>Helps with leadership, strategy and UCOM development.</p>
+    </div>
+
+    <div class="card">
+        <h3>🏰 Devang Rajput</h3>
+        <p>Owner</p>
+        <p>One of the key leaders responsible for UCOM.</p>
+    </div>
+
+</div>
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section class="section" id="contact">
+
+        <h2>Join UCOM</h2>
+
+        <p>
+            Ready to become part of the community?
+            Join our Discord and become a citizen of UCOM.
+        </p>
+
+        <div class="buttons">
+
+            <a href="https://discord.gg/TpMb3hHS7" class="btn">
+    Join Discord
+</a>
+                
+            
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        © 2026 UCOM — United Citizens of Mineheart
+
+    </footer>
+
+</body>
+</html>
